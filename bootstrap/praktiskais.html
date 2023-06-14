@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Aptauja</title>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="d-flex mb-5 justify-content-center">Sadaļa par tevi un tavām interesēm</h1>
+        <form class="row g-3" id="survey">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label fw-bold">Lūdz ievadi savu e-pasta adresi</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="piemers@inbox.lv" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">Mēs nekad Tev nesūtīsim spamu!</div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="inputGroupFile01">Pievieno savu foto</label>
+                <input type="file" class="form-control" id="inputGroupFile01">
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="flexRadioDefault">Kuram saldējumam Tu dod priekšroku?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Vaniļas saldējums
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      šokolādes saldējums
+                    </label>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label fw-bold" for="flexRadioDefault">Kuros veikalos Tu iepērcies ikdienā?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Maxima
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Rimi
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Lidl
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Top
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Lats
+                    </label>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary d-flex justify-content-center"
+                  onclick="validateForm()">Iesniegt</button>
+            </div>
+        
+        
+        
+        
+        </form>  
+
+    </div>
+</body>
+</html>
