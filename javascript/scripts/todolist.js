@@ -6,6 +6,7 @@ function addTask() {
 
   if (task !== '') {
     tasks.push( task );
+    taskInput.value = '';
     renderTasks();
   }
 }
@@ -16,11 +17,13 @@ function renderTasks() {
 
   tasks.forEach((task, index) => {
     const listItem = document.createElement('li');
-    listItem.className = 'list-group-item d-flex align-items-center';
+    listItem.className = 'list-group-item mb-4 d-flex align-items-center';
 
     listItem.innerHTML = `
-    <span class="mr-auto">${task}</span>
-    <button type="button" class="btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})">Delete</button>
+    <span class="mr-auto" id=${index}>${task}</span>
+    <div class="justify-content-end d-flex">
+    <button type="button" class=" btn btn-outline-danger btn-sm mr-2" onclick="deleteTask(${index})">Delete</button>
+    </div>
     `;
 
     taskList.appendChild(listItem);

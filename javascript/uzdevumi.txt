@@ -1,0 +1,4 @@
+1. atzīmet, ka uzdevums ir izpildīts, nosvītrojot to (chekbox, pogu)
+2. sakārtot stilu detele pogai
+3. mēs varam atzīmēt, ka uzdevums ir svarīgs, pieliekot sarkano krāsu
+4. atstarpes starp uzdevumiem
